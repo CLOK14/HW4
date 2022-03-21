@@ -1,0 +1,77 @@
+.skills {
+    padding-top: 126px;
+    &__subtitle {
+        position: relative;
+        @include before-circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+        gap: 13px;
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000000;
+    }
+    &__icon {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__progress {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: 70px 70px;
+        grid-auto-rows: 70px;
+        column-gap: 45px;
+        row-gap: 30px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            padding-left: 13px;
+            position: relative;
+            @include before-circle;
+            &:before {
+                top: -7px;
+                left: 0;
+            }
+        }
+        &-couner {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-bar {
+            width: 350px;
+            height: 14px;
+
+            background: #E8E4DE;
+            border-radius: 4px;
+            span {
+                display: block;
+                height: 14px;
+                background-color: $main-orange;
+                border-radius: 4px;
+            }
+        }
+    }
+}
