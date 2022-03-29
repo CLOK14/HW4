@@ -1,15 +1,66 @@
 @media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .side-panel {
+        display: none;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 515px;
+            grid-column-gap: 40px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template-columns: repeat(2,250px);
+        }
+        &__skill {
+            grid-template-columns: 40px 195px;
+            grid-column-gap: 15px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px ;
+    }
+    .title {
+        &_fz48 {
+            font-size: 36px;
+            line-height: 52px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
 
 }
 
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 575px) {
-
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+            line-height: 39px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .header {
+        background: url(../../img/bg.jpg) 55%/cover no-repeat;
+    }
 }
