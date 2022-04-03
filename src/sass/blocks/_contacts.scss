@@ -1,10 +1,12 @@
 .contacts {
     margin-top: 120px;
-    padding: 0 35px 92px 52px;
+    //padding: 0 35px 92px 52px;
+    padding-bottom: 52px;
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 585px;
         column-gap: 68px;
+        justify-content: center;
     }
     &__photo {
         img {
@@ -41,12 +43,14 @@
     }
     &__input {
         position: relative;
+        height: 45px;
+        width: 280px;
         input {
-            height: 45px;
+            height: 100%;
             border: 1px solid #000000;
             padding-left: 20px;
             border-radius: 0;
-            width: 280px;
+            width: 100%;
             font-weight: 500;
             font-size: 12px;
         }
