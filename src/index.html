@@ -51,7 +51,6 @@
     <!--     -->
 
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Pulse</title>
 </head>
 <body>
 <div class="side-panel">
@@ -73,12 +72,12 @@
         </div>
         <nav>
             <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">ПРО МЕНЯ</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">МОЙ ОПЫТ</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">МОИ НАВЫКИ</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">МОИ РАБОТЫ</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">ПРАЙС-ЛИСТ</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
+                <li class="menu__item"><a href="#about" class="menu__link">ПРО МЕНЯ</a></li>
+                <li class="menu__item"><a href="#experience" class="menu__link">МОЙ ОПЫТ</a></li>
+                <li class="menu__item"><a href="#skills" class="menu__link">МОИ НАВЫКИ</a></li>
+                <li class="menu__item"><a href="#portfolio" class="menu__link">МОИ РАБОТЫ</a></li>
+                <li class="menu__item"><a href="#price" class="menu__link">ПРАЙС-ЛИСТ</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link">КОНТАКТЫ</a></li>
             </ul>
         </nav>
         <div class="menu__social">
@@ -105,7 +104,7 @@
     </div>
 </div>
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="promo">
             <div class="title title_fz16 header__subtitle">Меня зовут Александра Смит</div>
@@ -113,8 +112,8 @@
                 из города Москва
             </h1>
             <div class="header__buttons">
-                <a href="#" class="button ">Портфолио</a>
-                <a href="#" class="header__link">Про меня</a>
+                <a href="#portfolio" class="button ">Портфолио</a>
+                <a href="#about" class="header__link">Про меня</a>
             </div>
         </div>
     </div>
@@ -125,7 +124,7 @@
     </div>
 </header>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about__wrapper">
             <div class="about__photo">
@@ -174,7 +173,7 @@
     </div>
 </section>
 
-<section class="experience">
+<section class="experience" id="experience">
     <div class="container">
         <h3 class="title title_fz16 title_center experience__subtitle">Опыт</h3>
         <h2 class="title title_center">Чем я буду полезна</h2>
@@ -250,7 +249,7 @@
     </div>
 </section>
 
-<section class="skills">
+<section class="skills" id="skills">
     <div class="container">
         <div class="title title_fz16 title_center skills__subtitle">Навыки</div>
         <div class="title title_center">Что я использую в работе</div>
@@ -365,7 +364,7 @@
     </div>
 </section>
 
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="container">
         <div class="title title_fz16 title_center portfolio__title">Портфолио</div>
         <div class="title title_center">Мои работы</div>
@@ -381,7 +380,7 @@
     </div>
 </section>
 
-<section class="price">
+<section class="price" id="price">
     <div class="container">
         <div class="title title_fz16 title_center price__title">Прайс-лист</div>
         <div class="line"></div>
@@ -440,7 +439,7 @@
     </div>
 </section>
 
-<section class="contacts">
+<section class="contacts" id="contacts">
     <div class="container">
         <div class="contacts__wrapper">
             <div class="contacts__photo"><img src="img/Photo.jpg" alt="photo"></div>
@@ -485,10 +484,10 @@
                         <label for="text">Ваше сообщение</label>
                     </div>
                     <div class="contacts__triggers">
-                        <button class="button">Отправить сообщение</button>
+                        <button type="submit" class="button">Отправить сообщение</button>
                         <div>
                             <input type="checkbox" required id="check">
-                            Я согласен(а) с<a href="#">политикой конфиденциальности</a>
+                            Я согласен(а) с&nbsp <a href="privacy.html">политикой конфиденциальности</a>
                         </div>
                     </div>
                 </form>
@@ -497,18 +496,32 @@
     </div>
 </section>
 
+<div class="overlay">
+    <div class="modal">
+        <div class="modal__text">Спасибо за вашу заявку</div>
+        <button class="button">Закрыть</button>
+    </div>
+</div>
 
-
-
+<a class="scrollUp" href="#header">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+    <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 46.001 46.001" style="enable-background:new 0 0 46.001 46.001;" xml:space="preserve">
+	<path style="fill:#FFA501;" d="M5.906,34.998c-1.352,1.338-3.541,1.338-4.893,0c-1.35-1.338-1.352-3.506,0-4.846l19.54-19.148
+		c1.352-1.338,3.543-1.338,4.895,0l19.539,19.148c1.352,1.34,1.352,3.506,0,4.846c-1.352,1.338-3.541,1.338-4.893,0L23,19.295
+		L5.906,34.998z"/>
+</svg>
+</a>
 
 
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/libs/slick.min.js"></script>
+<!--    <script src="js/libs/slick.min.js"></script>-->
     <script src="js/libs/jquery.validate.min.js"></script>
-    <script src="js/libs/jquery.maskedinput.min.js"></script>
-    <script src="js/libs/wow.min.js"></script>
+<!--    <script src="js/libs/jquery.maskedinput.min.js"></script>-->
+<!--    <script src="js/libs/wow.min.js"></script>-->
     <script src="js/script.js"></script>
 </body>
 </html>
